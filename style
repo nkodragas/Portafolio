@@ -1,0 +1,6 @@
+body {
+    font-family: 'Hepta Slab', serif;
+    background-image: linear-gradient(#848181, #403e3b);
+    color: #ebebe7;
+    margin: 0;
+}
