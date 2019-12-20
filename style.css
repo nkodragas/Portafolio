@@ -10,6 +10,13 @@ a {
 
 h1{
 font-family: 'Fjalla One', sans-serif;
-margin-top: 50px;
-margin-right: 150px;
+    /* margin-top: 50px; */
+    margin-right: 150px;
+    margin-left: 50;
+}
+h2{
+font-family: 'Fjalla One', sans-serif;
+    /* margin-top: 50px; */
+    margin-right: 150px;
+    margin-left: 80;
 }
