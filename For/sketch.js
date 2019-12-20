@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(700, 500);
+  createCanvas(windowWidth, windowHeight);
   cursor(CROSS);
 }
 
