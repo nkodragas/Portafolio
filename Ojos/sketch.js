@@ -13,8 +13,8 @@ function draw() {
 
 
   let eyes = 224
-  let numX = (8);
-  let numY = (28);
+  let numX = (11);
+  let numY = (32);
 
   let m = 80;
   let spx = (width - 1 * m) / (numX + 1);
