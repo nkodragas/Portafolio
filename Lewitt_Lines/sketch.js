@@ -3,7 +3,7 @@ let q, i
 
 function setup() {
   frameRate(5)
-  createCanvas(600,500);
+createCanvas(windowWidth, windowHeight);
   background(255)
 
 
