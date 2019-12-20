@@ -30,7 +30,7 @@ function draw() {
       let radio = r+2
       
       if (radio > 20){
-        radio = 0
+        radio = 20
       }
 
       push();
