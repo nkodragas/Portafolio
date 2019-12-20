@@ -2,9 +2,10 @@ let p = [];
 let q, i
 
 function setup() {
-  
+  frameRate(5)
   createCanvas(600,500);
-  background(222)
+  background(255)
+
 
 }
 
@@ -13,7 +14,7 @@ function draw() {
 
  stroke(11);
   strokeWeight(0.1);
- for (var b = 0; b < 50; b++) {
+ for (var b = 0; b < 1; b++) {
 lineas()
 
 }
@@ -32,7 +33,9 @@ function lineas() {
     p[i][0], // x2
     p[i][1] // y2
     );
+    if (i == 50) {
           noLoop()
+      }
   }
 }
 
