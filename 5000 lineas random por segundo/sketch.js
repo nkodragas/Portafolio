@@ -7,7 +7,7 @@ let m=50;
 function setup() {
 
   let str = random(0.5, 1);
-  createCanvas(800, 500);
+createCanvas(windowWidth, windowHeight);
   frameRate(5)
   strokeWeight(str);
   stroke(0,50);
