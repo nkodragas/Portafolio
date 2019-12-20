@@ -1,6 +1,7 @@
 body {
-    background-image :URL('/IMG_5595')
-
+    background-color: (#111111);
+    color: #ffffff;
+    margin: 0;
 }
 a {
     color: #E01251;
