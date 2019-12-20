@@ -2,8 +2,9 @@ let p = [];
 let q, i
 
 function setup() {
+  
   createCanvas(600,500);
-
+  background(222)
 
 }
 
@@ -12,7 +13,7 @@ function draw() {
 
  stroke(11);
   strokeWeight(0.1);
- for (var b = 0; b < 10; b++) {
+ for (var b = 0; b < 50; b++) {
 lineas()
 
 }
