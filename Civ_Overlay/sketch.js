@@ -1,15 +1,27 @@
+var fade = 0;
+var fadeSpeed = 1.6;
 let sel;
-let aztecas;
-let bereberes;
+let aztecas, bereberes, indios, incas, ingleses, italianos, japoneses, jemeres, lituanos, magiares, malies, malayos;
 
 function preload() {
   aztecas = loadImage("Aztecas.png");
   bereberes = loadImage("Bereberes.png");
+  indios = loadImage("Indios.png");
+  incas = loadImage("Incas.png");
+  ingleses = loadImage("Ingleses.png");
+  italianos = loadImage("Italianos.png");
+  japoneses = loadImage("Japoneses.png");
+  jemeres = loadImage("Jemeres.png");
+  lituanos = loadImage("Lituanos.png");
+  magiares = loadImage("Magiares.png");
+  malies = loadImage("Malíes.png");
+  malayos = loadImage("Malayos.png");
+
 }
 
 function setup() {
 
-  createCanvas(500, 600);
+  createCanvas(460, 500);
   rect(1,1,1,1)
   textAlign(CENTER);
   background(255,0,255);
@@ -72,8 +84,36 @@ function mySelectEvent() {
     case 'Bereberes':
     image(bereberes, -23,20,420,468);
     break;
-
-
+    case 'Indios':
+    image(indios, -23,20,420,468);
+    break;
+    case 'Incas':
+    image(incas, -23,20,420,468);
+    break;
+    case 'Ingleses':
+    image(ingleses, -23,20,420,468);
+    break;
+    case 'Italianos':
+    image(italianos, -23,20,420,468);
+    break;
+    case 'Japoneses':
+    image(japoneses, -23,20,420,468);
+    break;
+    case 'Jemeres':
+    image(jemeres, -23,20,420,468);
+    break;
+    case 'Lituanos':
+    image(lituanos, -23,20,420,468);
+    break;
+    case 'Magiares':
+    image(magiares, -23,20,420,468);
+    break;
+    case 'Malíes':
+    image(malies, -23,20,420,468);
+    break;
+    case 'Malayos':
+    image(malayos, -23,20,420,468);
+    break;
       
 }
     
