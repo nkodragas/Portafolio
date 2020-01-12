@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(700, 500);
+  createCanvas(windowWidth, windowHeight);
   cursor(CROSS);
 }
 
@@ -30,7 +30,7 @@ function draw() {
       let radio = r+2
       
       if (radio > 20){
-        radio = 0
+        radio = 20
       }
 
       push();
