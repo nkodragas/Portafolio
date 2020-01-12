@@ -13,7 +13,7 @@ function setup() {
   textAlign(CENTER);
   background(0,255,0);
   sel = createSelect();
-  sel.position(20, 70);
+  sel.position(0, 0);
   sel.option('Seleccionar');
   sel.option('Aztecas');
   sel.option('Bereberes');
