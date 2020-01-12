@@ -192,7 +192,7 @@ function mySelectEvent() {
     case 'Sarracenos':
       image(sarracenos, -23, 20, 420, 468);
       break;
-    case 'Tartaros':
+    case 'Tártaros':
       image(tartaros, -23, 20, 420, 468);
       break;
     case 'Teutones':
