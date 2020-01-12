@@ -9,9 +9,9 @@ function preload() {
 
 function setup() {
 
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(500, 600);
   textAlign(CENTER);
-  background(0,0,0,0);
+  background(0,255,0);
   sel = createSelect();
   sel.position(20, 70);
   sel.option('Seleccionar');
@@ -57,20 +57,21 @@ function setup() {
 
 
 function mySelectEvent() {
-  background(0,0,0,0);
+  background(0,255,0);
 
   let item = sel.value();
 
 
   switch (item) {
     case 'Seleccionar':
-removeElements(
+    break;  
     case 'Aztecas':
-    image(aztecas, 0,100,420,468);
-    break;     
+    image(aztecas, -23,100,420,468);
+    break;  
     case 'Bereberes':
-    image(bereberes, 0,100,420,468);
+    image(bereberes, -23,100,420,468);
     break;
+
 
       
 }
