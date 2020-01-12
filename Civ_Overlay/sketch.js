@@ -62,7 +62,7 @@ function setup() {
   sel.option('Teutones');
   sel.option('Turcos');
   sel.option('Vietnamitas');
-  sel.option('Vinkingos');
+  sel.option('Vikingos');
 
 
   sel.changed(mySelectEvent);
