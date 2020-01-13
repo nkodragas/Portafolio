@@ -1,4 +1,4 @@
-var fade = 0;
+var x = -600;
 var fadeSpeed = 1.6;
 let sel;
 let aztecas, bereberes, indios, incas, ingleses, italianos, japoneses, jemeres, lituanos, magiares, malies, malayos, coreanos, bulgaros, birmanos, bizantnos, celtas, chinos, cumanos, eslavos, españoles, etiopes, francos, godos, hunos, mayas, mongoles, persas, portugueses, sarracenos, tartaros, teutones, turcos, vietnamitas, vikingos;
@@ -44,12 +44,12 @@ function preload() {
 }
 
 function setup() {
-
   createCanvas(460, 500);
   rect(1, 1, 1, 1)
   textAlign(CENTER);
   background(255, 0, 255);
   sel = createSelect();
+  sel.mouseOver(salida)
   sel.position(0, 0);
   sel.option('Seleccionar');
   sel.option('Aztecas');
@@ -90,11 +90,38 @@ function setup() {
 
 
   sel.changed(mySelectEvent);
+  
+
+}
+function salida() {
+x=-600
+  if(x > -600){
+    salida(x-600);
+  }
 }
 
 
+function mouseClicked() {
+x= -600
+
+
+}
+
+function draw(){
+
+background(255, 0, 255);
+mySelectEvent()
+   x = x + 4
+  if (x > -23) {
+    x = -23
+ }
+ 
+
+
+
+  
+}
 function mySelectEvent() {
-  background(255, 0, 255);
 
   let item = sel.value();
 
@@ -103,114 +130,113 @@ function mySelectEvent() {
     case 'Seleccionar':
       break;
     case 'Aztecas':
-      image(aztecas, -23, 20, 420, 468);
+      image(aztecas, x, 20, 420, 468);
       break;
     case 'Bereberes':
-      image(bereberes, -23, 20, 420, 468);
+      image(bereberes, x, 20, 420, 468);
       break;
     case 'Indios':
-      image(indios, -23, 20, 420, 468);
+      image(indios, x, 20, 420, 468);
       break;
     case 'Incas':
-      image(incas, -23, 20, 420, 468);
+      image(incas, x, 20, 420, 468);
       break;
     case 'Ingleses':
-      image(ingleses, -23, 20, 420, 468);
+      image(ingleses, x, 20, 420, 468);
       break;
     case 'Italianos':
-      image(italianos, -23, 20, 420, 468);
+      image(italianos, x, 20, 420, 468);
       break;
     case 'Japoneses':
-      image(japoneses, -23, 20, 420, 468);
+      image(japoneses, x, 20, 420, 468);
       break;
     case 'Jemeres':
-      image(jemeres, -23, 20, 420, 468);
+      image(jemeres, x, 20, 420, 468);
       break;
     case 'Lituanos':
-      image(lituanos, -23, 20, 420, 468);
+      image(lituanos, x, 20, 420, 468);
       break;
     case 'Magiares':
-      image(magiares, -23, 20, 420, 468);
+      image(magiares, x, 20, 420, 468);
       break;
     case 'Malíes':
-      image(malies, -23, 20, 420, 468);
+      image(malies, x, 20, 420, 468);
       break;
     case 'Malayos':
-      image(malayos, -23, 20, 420, 468);
+      image(malayos, x, 20, 420, 468);
       break;
     case 'Coreanos':
-      image(coreanos, -23, 20, 420, 468);
+      image(coreanos, x, 20, 420, 468);
       break;
     case 'Búlgaros':
-      image(bulgaros, -23, 20, 420, 468);
+      image(bulgaros, x, 20, 420, 468);
       break;
     case 'Birmanos':
-      image(birmanos, -23, 20, 420, 468);
+      image(birmanos, x, 20, 420, 468);
       break;
     case 'Bizantinos':
-      image(bizantinos, -23, 20, 420, 468);
+      image(bizantinos, x, 20, 420, 468);
       break;
     case 'Celtas':
-      image(celtas, -23, 20, 420, 468);
+      image(celtas, x, 20, 420, 468);
       break;
     case 'Chinos':
-      image(chinos, -23, 20, 420, 468);
+      image(chinos, x, 20, 420, 468);
       break;
     case 'Cumanos':
-      image(cumanos, -23, 20, 420, 468);
+      image(cumanos, x, 20, 420, 468);
       break;
     case 'Eslavos':
-      image(eslavos, -23, 20, 420, 468);
+      image(eslavos, x, 20, 420, 468);
       break;
     case 'Españoles':
-      image(españoles, -23, 20, 420, 468);
+      image(españoles, x, 20, 420, 468);
       break;
     case 'Etíopes':
-      image(etiopes, -23, 20, 420, 468);
+      image(etiopes, x, 20, 420, 468);
       break;
     case 'Francos':
-      image(francos, -23, 20, 420, 468);
+      image(francos, x, 20, 420, 468);
       break;
     case 'Godos':
-      image(godos, -23, 20, 420, 468);
+      image(godos, x, 20, 420, 468);
       break;
     case 'Hunos':
-      image(hunos, -23, 20, 420, 468);
+      image(hunos, x, 20, 420, 468);
       break;
     case 'Mayas':
-      image(mayas, -23, 20, 420, 468);
+      image(mayas, x, 20, 420, 468);
       break;
     case 'Mongoles':
-      image(mongoles, -23, 20, 420, 468);
+      image(mongoles, x, 20, 420, 468);
       break;
     case 'Persas':
-      image(persas, -23, 20, 420, 468);
+      image(persas, x, 20, 420, 468);
       break;
     case 'Portugueses':
-      image(portugueses, -23, 20, 420, 468);
+      image(portugueses, x, 20, 420, 468);
       break;
     case 'Sarracenos':
-      image(sarracenos, -23, 20, 420, 468);
+      image(sarracenos, x, 20, 420, 468);
       break;
-    case 'Tártaros':
-      image(tartaros, -23, 20, 420, 468);
+    case 'Tartaros':
+      image(tartaros, x, 20, 420, 468);
       break;
     case 'Teutones':
-      image(teutones, -23, 20, 420, 468);
+      image(teutones, x, 20, 420, 468);
       break;
     case 'Turcos':
-      image(turcos, -23, 20, 420, 468);
+      image(turcos, x, 20, 420, 468);
       break;
     case 'Vietnamitas':
-      image(vietnamitas, -23, 20, 420, 468);
+      image(vietnamitas, x, 20, 420, 468);
       break;
     case 'Vikingos':
-      image(vikingos, -23, 20, 420, 468);
+      image(vikingos, x, 20, 420, 468);
       break;
 
 
 
   }
-
 
 }
