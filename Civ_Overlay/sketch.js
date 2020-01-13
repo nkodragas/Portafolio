@@ -1,6 +1,7 @@
 var x = -600;
 var fadeSpeed = 1.6;
 let sel;
+let fps
 let aztecas, bereberes, indios, incas, ingleses, italianos, japoneses, jemeres, lituanos, magiares, malies, malayos, coreanos, bulgaros, birmanos, bizantnos, celtas, chinos, cumanos, eslavos, españoles, etiopes, francos, godos, hunos, mayas, mongoles, persas, portugueses, sarracenos, tartaros, teutones, turcos, vietnamitas, vikingos;
 
 function preload() {
@@ -44,12 +45,31 @@ function preload() {
 }
 
 function setup() {
+  // let inp = createInput('');
+  // inp.input(myInputEvent);
+  frameRate(59)
   createCanvas(460, 500);
   rect(1, 1, 1, 1)
   textAlign(CENTER);
   background(255, 0, 255);
   sel = createSelect();
- // sel.mouseOver(salida)
+  sel.position(0, 1);
+  sel.option('Seleccionar');
+  sel.mouseOver(salida)
+
+
+
+  sel.changed(mySelectEvent);
+
+
+}
+
+function salida() {
+rect(1, 1, 1, 1)
+  textAlign(CENTER);
+  background(255, 0, 255);
+  sel = createSelect();
+  // sel.mouseOver(salida)
   sel.position(0, 0);
   sel.option('Seleccionar');
   sel.option('Aztecas');
@@ -88,39 +108,26 @@ function setup() {
   sel.option('Vietnamitas');
   sel.option('Vikingos');
 
-
-  sel.changed(mySelectEvent);
-  
-
-}
-function salida() {
-x=-600
-  if(x > -600){
-    salida(x-600);
-  }
 }
 
 
 function mouseClicked() {
-x= -600
-
-
+  x = -600
 }
 
-function draw(){
 
-background(255, 0, 255);
-mySelectEvent()
-   x = x + 4
+
+function draw() {
+
+  background(255, 0, 255);
+  mySelectEvent()
+  x = x + 4
   if (x > -23) {
     x = -23
- }
- 
+  }
 
-
-
-  
 }
+
 function mySelectEvent() {
 
   let item = sel.value();
@@ -130,7 +137,7 @@ function mySelectEvent() {
     case 'Seleccionar':
       break;
     case 'Aztecas':
-      image(aztecas, x, 20, 420, 468);
+      image(aztecas, x, 21, 420, 468);
       break;
     case 'Bereberes':
       image(bereberes, x, 20, 420, 468);
