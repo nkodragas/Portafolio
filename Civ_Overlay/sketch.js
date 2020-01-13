@@ -49,7 +49,7 @@ function setup() {
   textAlign(CENTER);
   background(255, 0, 255);
   sel = createSelect();
-  sel.mouseOver(salida)
+ // sel.mouseOver(salida)
   sel.position(0, 0);
   sel.option('Seleccionar');
   sel.option('Aztecas');
