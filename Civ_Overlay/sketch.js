@@ -67,7 +67,7 @@ function setup() {
 function salida() {
 rect(1, 1, 1, 1)
   textAlign(CENTER);
-  background(255, 0, 255);
+  //background(255, 0, 255);
   sel = createSelect();
   // sel.mouseOver(salida)
   sel.position(0, 0);
@@ -118,8 +118,8 @@ function mouseClicked() {
 
 
 function draw() {
-
-  background(255, 0, 255);
+clear()
+ // background(255, 0, 255);
   mySelectEvent()
   x = x + 4
   if (x > -23) {
