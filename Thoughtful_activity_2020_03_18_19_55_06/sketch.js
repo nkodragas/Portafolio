@@ -5,7 +5,7 @@ let fps
 let aztecas, bereberes, indios, incas, ingleses, italianos, japoneses, jemeres, lituanos, magiares, malies, malayos, coreanos, bulgaros, birmanos, bizantnos, celtas, chinos, cumanos, eslavos, españoles, etiopes, francos, godos, hunos, mayas, mongoles, persas, portugueses, sarracenos, tartaros, teutones, turcos, vietnamitas, vikingos, nicov;
 
 function preload() {
-  aztecas = loadImage("Aztecs_1.webm");
+  aztecas = loadImage("Aztecs.gif");
   bereberes = loadImage("Bereberes.png");
   indios = loadImage("Indios.png");
   incas = loadImage("Incas.png");
